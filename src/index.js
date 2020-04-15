@@ -4,11 +4,18 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
+//Provider
+import { Provider } from 'react-redux';
+import { store, sagaMiddleware } from './components/store';
+import rootSaga from './components/sagas';
+
+sagaMiddleware.run(rootSaga);
+
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  </Provider>,
+  document.getElementById('root'),
 );
 
 // If you want your app to work offline and load faster, you can change

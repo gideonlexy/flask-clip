@@ -1,0 +1,19 @@
+.news-button {
+  display: flex;
+  margin: 50px auto;
+  justify-content: center;
+}
+.get-news {
+  height: 50px;
+  font-size: 18px;
+  line-height: 1.65;
+  padding: 10px;
+  background-color: rgb(245, 23, 103);
+  color: #fff;
+  align-items: center;
+  width: 10%;
+  border-radius: 12px 4px;
+  text-transform: uppercase;
+  box-shadow: rgba(19, 15, 235, 0.4) 5px 5px 20px;
+  cursor: pointer;
+}
